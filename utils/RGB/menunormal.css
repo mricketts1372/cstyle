@@ -1,0 +1,20 @@
+@charset "iso-8859-1";
+
+a:link {text-decoration: none; color: #f00800 ;}
+a:visited {text-decoration: none; color: #f00800 ;}
+a:active {text-decoration: underline; color: #f00800;}
+a:hover {text-decoration: underline; color: #f00800 ;}
+
+a.menu { width:110px; margin-top:2px; margin-bottom:2px; padding-bottom:1px; background-color:#FF0080; text-align:center; display:block;}
+a.menu:link { color:#FF0080; border:1px solid; border-color:white white white white; text-decoration:none; background-color:#FF0080 }
+a.menu:visited { color:#ff0080; border:1px solid; border-color:white darkred darkred white; text-decoration:none; background-color:#FFD733 }
+a.menu:hover {  color:#FFFFFF; border:1px solid; border-color:black #f00800  #f00800  black; text-decoration:none; background-color:#ff0080 }
+a.menu:active { color:#FFFFFF; border:1px solid; border-color:black #f00800 #f00080 black; text-decoration:none; background-color:#ff0080 }
+
+div.menu { color:#ff0080;width:110px; margin-top:2px; margin-bottom:2px; padding-bottom:1px; background-color:#ff0080; display:block;
+text-align:center; border:1px solid; border-color:black #ff0080 #ff0080 black; }
+
+table.normal { border:0 }
+table.menu { background-color:#e0e0e0; width:100%;}
+
+span.menu { color:#e0e0e0; width:110px; margin-top:2px; margin-bottom:2px; padding-bottom:1px; background-color:#ff0080; display:block; text-align:center; border:1px solid; border-color:black #ff0080 #ff0080 black; }

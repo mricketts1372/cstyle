@@ -1,0 +1,6 @@
+@charset "iso-8859-1";
+
+A:link {text-decoration: none; color: #ff0080;}
+A:visited {text-decoration: none; color: #ff0080;}
+A:active {text-decoration: underline; color: #ff0080;}
+A:hover {text-decoration: underline; color: #ff0080;}

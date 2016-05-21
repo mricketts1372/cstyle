@@ -1,0 +1,43 @@
+@charset "iso-8859-1";
+
+}
+/* corps de la page */
+body {
+scrollbar-face-color: #2E69AC;
+scrollbar-shadow-color: #000000;
+scrollbar-highlight-color: #FFFFFF;
+scrollbar-3dlight-color: #FFFF00;
+scrollbar-darkshadow-color: #660000;
+scrollbar-track-color: #000000;
+scrollbar-arrow-color: #FFFF00;
+    font-family:Arial,Verdana,Helvetica,Sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	background-color: #e0e0e0;
+	color: #e0e0e0
+}
+/* Définiton des titres */
+h1 {
+	font-size: 20px;
+	text-align: center;
+	margin: -5px 0px -15px 0px;
+}
+/* style des liens */
+a:link {color:#FFFF00;text-decoration: none; color: #FFFF00;}
+a:visited {color:#FFFF00;text-decoration: none; color: #FFFF00;}
+a:active {color:#FF0000;text-decoration: underline; color: #FF0000;}
+a:hover {color:#FF0000;text-decoration: underline; color: #FF0000;}
+
+a.menu { width:110px; margin-top:2px; margin-bottom:2px; padding-bottom:1px; background-color:#e0e0e0; text-align:center; display:block;font-size:15px;font-weight:bold;}
+a.menu:link { color:#ff0080; border:1px solid; border-color:black darkred darkred black; text-decoration:none; background-color:#FF0080 }
+a.menu:visited { color:#ff0080; border:1px solid; border-color:white darkred darkred white; text-decoration:none; background-color:#ff0080 }
+a.menu:hover {  color:#FFFFFF; border:1px solid; border-color:black #ff0080 #ff0080 black; text-decoration:none; background-color:#ff0080}
+a.menu:active { color:#FFFFFF; border:1px solid; border-color:black #ff0080 #ff0080 black; text-decoration:none; background-color:#ff0080 }
+
+div.menu { color:#ff0880;width:110px; margin-top:2px; margin-bottom:2px; padding-bottom:1px; background-color:#ff0880; display:block;
+text-align:center; border:1px solid; border-color:black #ff0080#ff0080 black; }
+
+table.normal { border:0; }
+table.titre { background-color:#ff0080;background-image:url(alien.jpg); border:1px solid; border-color:black gray gray black;}
+
+span.menu { color:#ff0080; width:110px; margin-top:2px; margin-bottom:2px; padding-bottom:1px; background-color:#ff0080; display:block; text-align:center; border:1px solid; border-color:black #ff0080 #ff0080 black; }
