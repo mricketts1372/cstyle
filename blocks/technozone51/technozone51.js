@@ -226,7 +226,7 @@ Blockly.Blocks['technozone_ctn1'] = {
 	this.setHelpUrl('http://www.techno-zone-51.fr/dokuwiki2/doku.php?id=documentation:ctn1');
     this.appendDummyInput("")
         .appendField(Blockly.Msg.TECHNOZONE51_TEXT24)
-        .appendField(new Blockly.FieldImage("/images/temperature-2-48.png", Blockly.Arduino.imageSize, Blockly.Arduino.imageSize));
+        .appendField(new Blockly.FieldImage("images/temperature-2-48.png", Blockly.Arduino.imageSize, Blockly.Arduino.imageSize));
       this.appendDummyInput("")
       .appendField(Blockly.Msg.TECHNOZONE51_TEXT2)
       .appendField(new Blockly.FieldTextInput("4"), 'PIN')

@@ -10,7 +10,7 @@ Blockly.Blocks['technozone_btn1white'] = {
     this.setHelpUrl('http://www.techno-zone-51.fr/dokuwiki2/doku.php?id=documentation:btn1');
 	this.appendDummyInput("")
         .appendField(Blockly.Msg.TECHNOZONE51_TEXT5)
-        .appendField(new Blockly.FieldImage("/images/switch-off-48.png" , Blockly.Arduino.imageSize, Blockly.Arduino.imageSize))
+        .appendField(new Blockly.FieldImage("images/switch-off-48.png" , Blockly.Arduino.imageSize, Blockly.Arduino.imageSize))
     this.appendValueInput("PIN", 'Number')
         .setAlign(Blockly.ALIGN_RIGHT)
 		.appendField(Blockly.Msg.TECHNOZONE51_TEXT2)
