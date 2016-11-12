@@ -438,9 +438,13 @@ padding: .5em .5em;
 				</div>
 			</div>
 			<div id="content_arduino" class="tab-pane">
-           <div align= "right">
+           <div align= "left">
 				<select id="cb_cf_boards"></select>
 				<select id="cb_cf_ports"></select>
+        <a id="btn_plugin_codebender" class='btn btn-danger' href="https://codebender.cc/static/plugin" target=_blank role='button'alt="alternative text" title="add codebender to your browser">
+          <span class="glyphicon glyphicon-ban-circle"></span>
+          <span id="span_plugin_codebender"></span>
+        </a>
 
 				<button id="cb_cf_verify_btn" class="btn btn-primary" alt="alternative text" title="check if code is correct">
 					<span class="glyphicon glyphicon-ok"> </span>
@@ -457,10 +461,6 @@ padding: .5em .5em;
 
 <button type="button" class='btn btn-warning text-right' onclick="alert('Disabled in Lite Version');"><span class="glyphicon glyphicon-log-in"> </span> cStyle </button>
 
-<a id="btn_plugin_codebender" class='btn btn-danger' href="https://codebender.cc/static/plugin" target=_blank role='button'alt="alternative text" title="add codebender to your browser">
-          <span class="glyphicon glyphicon-ban-circle"></span>
-          <span id="span_plugin_codebender"> </span>
-        </a>
                 <div class="hide">
                 <button id="btn_pasteIDEArduino" class="btn btn-primary">
 					<span class="glyphicon glyphicon-random"> </span>
