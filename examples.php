@@ -20,8 +20,8 @@ session_start();
 <?php
 $password = 'd339669559aec82dabd05adb07a91c41';
 
-if (!isset($_SESSION['connected']) 
-	&& isset($_POST['password']) 
+if (!isset($_SESSION['connected'])
+	&& isset($_POST['password'])
 	&& md5($_POST['password']) == $password) {
      $_SESSION['connected'] = 'ok';
 }
@@ -71,14 +71,14 @@ foreach ($iterator as $fileinfo) {
 
 	if ($fileinfo->isDir()) {
 		$directories[] = $fileinfo;
-	}				
+	}
 }
-?>			
+?>
 
 <div id="divTitre">
 <p><span id="title"></span></p>
     <button id="btn_logout" type="button" class="btn btn-danger btn-xs">
-		<span class="glyphicon glyphicon-off"></span>		
+		<span class="glyphicon glyphicon-off"></span>
         <span id="span_logout"> </span>
     </button>
 <select id="languageMenu"></select>
@@ -125,7 +125,7 @@ foreach ($iterator as $fileinfo) {
 												echo "<option value=".str_replace('\\', '/', $file->getPathname()).">".$file->getFilename()."</option>";
 											}
 									    ?>
-										
+
 										</select>
 									</div>
 										<button class="btn btn-success" data-toggle="modal" data-target="#uploadModal">
@@ -155,7 +155,7 @@ foreach ($iterator as $fileinfo) {
 			<?php
 			if (file_exists('./examples/examples.json')) {
 				$contents = file_get_contents("./examples/examples.json");
-				$json = json_decode($contents); 
+				$json = json_decode($contents);
 				foreach ($json as $example) {
 					?>
 							<tr>
@@ -195,7 +195,7 @@ foreach ($iterator as $fileinfo) {
 												echo "<option value=".$pathName." ".$selected.">".$file->getFilename()."</option>";
 											}
 									    ?>
-										
+
 										</select>
 									</div>
 										<button class="btn btn-success" data-toggle="modal" data-target="#uploadModal">
