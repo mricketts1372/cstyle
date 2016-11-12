@@ -250,13 +250,6 @@ html[dir="RTL"] #btn_about, html[dir="RTL"] #btn_logout {
   background-color: #a9a9a9;
 }
 
-#cb_cf_boards{
-   background-color: #a9a9a9;
-}
-
-#cb_cf_ports{
-   background-color: #a9a9a9;
-}
 
 html[dir="RTL"] #languageMenu {
 	left: 10px;
