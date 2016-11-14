@@ -206,11 +206,16 @@ Blockly.Arduino.inout_analog_read_validator = function() {
 };
 
 Blockly.Arduino.inout_onoff = function() {
-  // Boolean values HIGH and LOW. 
+  // Boolean values HIGH and LOW.
   var code = (this.getFieldValue('BOOL') == 'HIGH') ? 'HIGH' : 'LOW';
   return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
+Blockly.Arduino.inout_onoff_custom = function() {
+  // Boolean values HIGH and LOW.
+  var code = (this.getFieldValue('BOOL') == 'HIGH') ? 'HIGH' : 'LOW';
+  return [code, Blockly.Arduino.ORDER_ATOMIC];
+};
 Blockly.Arduino.inout_angle = function() {
   // Just angle
   var angle = this.getFieldValue('ANGLE');
@@ -244,7 +249,7 @@ Blockly.Arduino.notone = function() {
 Blockly.Arduino.inout_pulsein = function() {
   var dropdown_pin = Blockly.Arduino.valueToCode(this, 'PIN', Blockly.Arduino.ORDER_ATOMIC);
   var dropdown_stat = this.getFieldValue('STAT');
-  
+
   Blockly.Arduino.setups_['setup_input_'+dropdown_pin] = 'pinMode('+dropdown_pin+', INPUT);';
   var code = 'pulseIn('+dropdown_pin+','+dropdown_stat+ ');\n';
   return [code, Blockly.Arduino.ORDER_ATOMIC];

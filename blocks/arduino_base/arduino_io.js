@@ -92,7 +92,7 @@ Blockly.Blocks.inout_digital_write_validator = {
 
 Blockly.Blocks.inout_digital_write = {
   init: function() {
-    this.setColour("#00979D");
+    this.setColour("#ff0080");
     this.setHelpUrl(Blockly.Msg.ARDUINO_INOUT_DIGITAL_WRITE_HELPURL);
 	this.appendValueInput("PIN", 'Number')
         .setAlign(Blockly.ALIGN_RIGHT)
@@ -102,7 +102,7 @@ Blockly.Blocks.inout_digital_write = {
 	this.appendValueInput("STAT", 'Boolean')
         .setAlign(Blockly.ALIGN_RIGHT)
       	.appendField(Blockly.Msg.ARDUINO_INOUT_DIGITAL_WRITE_INPUT2);
-    this.setInputsInline(false);
+    this.setInputsInline(true);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setTooltip(Blockly.Msg.ARDUINO_INOUT_DIGITAL_WRITE_TOOLTIP);
@@ -114,9 +114,15 @@ Blockly.Blocks.inout_digital_read = {
     this.setColour("#ff0080");
     this.setHelpUrl(Blockly.Msg.ARDUINO_INOUT_DIGITAL_READ_HELPURL);
 	this.appendValueInput("PIN", 'Number')
+      .setCheck('Number')
+        .setAlign(Blockly.ALIGN_RIGHT);
+        this.appendValueInput("STAT", 'Boolean')
         .setAlign(Blockly.ALIGN_RIGHT)
-        .appendField(Blockly.Msg.ARDUINO_INOUT_DIGITAL_READ_INPUT);
+         .appendField(Blockly.Msg.ARDUINO_INOUT_DIGITAL_READ_INPUT);
     this.setOutput(true, 'Boolean');
+      this.setInputsInline(true);
+     this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
     this.setTooltip(Blockly.Msg.ARDUINO_INOUT_DIGITAL_READ_TOOLTIP);
   }
 };
@@ -180,7 +186,7 @@ Blockly.Blocks.inout_analog_write = {
         .setAlign(Blockly.ALIGN_RIGHT)
         .appendField(Blockly.Msg.ARDUINO_INOUT_ANALOG_WRITE_INPUT2)
         .setCheck('Number');
-    this.setInputsInline(false);
+    this.setInputsInline(true);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setTooltip(Blockly.Msg.ARDUINO_INOUT_ANALOG_WRITE_TOOLTIP);
@@ -269,6 +275,16 @@ Blockly.Blocks['inout_onoff'] = {
 	this.setHelpUrl(Blockly.Msg.ARDUINO_INOUT_ONOFF_HELPURL);
     this.appendDummyInput("")
         .appendField(new Blockly.FieldDropdown(Blockly.Msg.FIELDDROPDOWN), 'BOOL');
+    this.setOutput(true,'Boolean');
+    this.setTooltip(Blockly.Msg.LOGIC_BOOLEAN_TOOLTIP);
+  }
+};
+Blockly.Blocks['inout_onoff_custom'] = {
+  init: function() {
+    this.setColour("#FFC1E4");
+  this.setHelpUrl(Blockly.Msg.ARDUINO_INOUT_ONOFF_HELPURL);
+   this.appendDummyInput("")
+        .appendField(new Blockly.FieldDropdown([[Blockly.Msg.TECHNOZONE51_TEXT313, "HIGH"], [Blockly.Msg.TECHNOZONE51_TEXT314, "LOW"]]), "BOOL");
     this.setOutput(true,'Boolean');
     this.setTooltip(Blockly.Msg.LOGIC_BOOLEAN_TOOLTIP);
   }

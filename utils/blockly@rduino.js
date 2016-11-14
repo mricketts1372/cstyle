@@ -210,7 +210,9 @@ BlocklyDuino.renderContent = function() {
 /**
  * Populate the supervision tabs with selected card
  */
-BlocklyDuino.renderSupervisionContent = function() {
+
+BlocklyDuino.renderSupervisionContent = function()
+{
 	// tabs-1
 	var pinTemplate1 = $("#template_tabs1").html();
 	var digitalNumbers = window.profile["defaultBoard"].digital;

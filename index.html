@@ -1,6 +1,6 @@
 <html>
 <head>
-<link rel="icon" type="image/png" href="http://gdriv.es/ptcbimages/pt.png"/>
+<link rel="icon" type="image/png" href="/images/pt.png"/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>cStyle Create</title>
 <!-- <script type="text/javascript" src="blocks/blockly_uncompressed.js"></script> -->
@@ -145,6 +145,8 @@ window.onclick = function(event) {
   }
 }
 </script>
+
+
 <style>
     html, body {
       height: 95%;
@@ -163,6 +165,13 @@ window.onclick = function(event) {
 #menuPanelFiles{float:right;margin-right:50px;margin-top: 30px}
 #menuPanelblockly {float:left; margin-left: 15px;margin-top: 30px}
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+
     h6 {
       font-weight: bold;
       margin-left: 5;
@@ -178,7 +187,7 @@ padding: .5em .5em;
       border: 2px solid #ff0080;
       background-color: #ff0080;
       color: #ffffff;
-}
+
      button.custom {
    padding: .5em .5em;
       font-size: 90%;
@@ -199,7 +208,7 @@ padding: .5em .5em;
       margin: 10px;
       padding: 20px;
       border: none;
-  }
+ }
 
  /* Dropdown Button */
 .dropbtn {
@@ -256,12 +265,11 @@ padding: .5em .5em;
     <div id="divTitre">
         <p>
         <h1>
-<a href="https://thepinkthink.com"><img style="height: 50px; width: 55px; margin: 0px -10px  15px 15px;" src="http://gdriv.es/ptcbimages/pt.png">
-</a> <font size= "7" color="#606060">cStyle Create</font>
+<font size= "7" color="#606060">cStyle Create</font>
 </h1>
 
  <div id="div_help_button">
-           <a id="btn_convert" class='btn btn-info text-right'  role='button'>
+           <a id="btn_convert" class='btn btn-info text-right'  role='button' alt="alternative text" title="help">
                <span class="glyphicon glyphicon-info-sign">
                </span>
                <span id="span_doc"> </span>
@@ -278,7 +286,12 @@ padding: .5em .5em;
            </a>
            </div>
             </p>
-        <select id="languageMenu"></select>
+
+             <select id="languageMenu"></select>
+
+
+
+
 
     </div>
     <div id="divBody">
@@ -345,21 +358,21 @@ padding: .5em .5em;
                   </font>
             </div>
 		<div id="menuPanelFiles">
-     <a id="btn_RGB" class="img" role='button'><image src="http://gdriv.es/ptcbimages/grid-three-up-32.png" alt="alternative text" title="RGB color help">
+     <a id="btn_RGB" class="img" role='button'><image src="images/grid-three-up-32.png" alt="alternative text" title="RGB color help">
             </a>
-       <a id="btn_delete" class="img" role='button'><image src="http://gdriv.es/ptcbimages/trash-6-32.png" alt="alternative text" title=" Delete all blocks">
+       <a id="btn_delete" class="img" role='button'><image src="images/trash-6-32.png" alt="alternative text" title=" Delete all blocks">
               </a>
 
             <div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn"><image src="http://gdriv.es/ptcbimages/save-32.png"></button>
+  <button onclick="myFunction()" class="dropbtn"><image src="images/save-32.png"></button>
   <div id="myDropdown" class="dropdown-content" >
-    <a id="btn_saveXML" class="img" role='button'><image src="http://gdriv.es/ptcbimages/data-transfer-download-32.png" alt="alternative text" title=" save cstyle code to your computer">
+    <a id="btn_saveXML" class="img" role='button'><image src="images/data-transfer-download-32.png" alt="alternative text" title=" save cstyle code to your computer">
               </a>
-<a id="btn_fakeload" class="img" role='button'><image src="http://gdriv.es/ptcbimages/data-transfer-upload-32.png" alt="alternative text" title="get saved cstyle codes from your computer">
+<a id="btn_fakeload" class="img" role='button'><image src="images/data-transfer-upload-32.png" alt="alternative text" title="get saved cstyle codes from your computer">
       </a>
-             <a id="btn_info" class='img' onclick="alert('Disabled in Lite Version');"><image src="http://gdriv.es/ptcbimages/cloud-upload-32.png" alt="alternative text" title="save cstyle code to your account"></a>
+             <a id="btn_info" class='img' onclick="alert('Disabled in Lite Version');"><image src="images/cloud-upload-32.png" alt="alternative text" title="save cstyle code to your account"></a>
 
-              <a id="button" class='img' onclick="alert('Disabled in Lite Version');"><image src="http://gdriv.es/ptcbimages/cloud-download-32.png" alt="alternative text" title="download cstyle codes from your account"></a>
+              <a id="button" class='img' onclick="alert('Disabled in Lite Version');"><image src="images/cloud-download-32.png" alt="alternative text" title="download cstyle codes from your account"></a>
 
 
   </div>
@@ -425,18 +438,19 @@ padding: .5em .5em;
 				</div>
 			</div>
 			<div id="content_arduino" class="tab-pane">
-           <div align= "right">
+           <div align= "left">
 				<select id="cb_cf_boards"></select>
 				<select id="cb_cf_ports"></select>
-				<a id="btn_plugin_codebender" class='btn btn-danger' href="https://codebender.cc/static/plugin" target=_blank role='button'alt="alternative text" title="not supported by Chrome brower on Mac computers">
-					<span class="glyphicon glyphicon-new-window"></span>
-					<span id="span_plugin_codebender"> </span>
-				</a>
-				<button id="cb_cf_verify_btn" class="btn btn-primary">
+        <a id="btn_plugin_codebender" class='btn btn-danger' href="https://codebender.cc/static/plugin" target=_blank role='button'alt="alternative text" title="add codebender to your browser">
+          <span class="glyphicon glyphicon-ban-circle"></span>
+          <span id="span_plugin_codebender"></span>
+        </a>
+
+				<button id="cb_cf_verify_btn" class="btn btn-primary" alt="alternative text" title="check if code is correct">
 					<span class="glyphicon glyphicon-ok"> </span>
 					<span id="span_verify_codebender"> </span>
 				</button>
-               <a id="btn_saveArduino" class='btn btn-primary' href="#" role='button'>
+               <a id="btn_saveArduino" class='btn btn-primary' href="#" role='button' alt="alternative text" title="save arduino code">
                     <span class="glyphicon glyphicon-save"> </span>
                     <span id="span_saveIno"> </span>
                 </a>
@@ -536,13 +550,13 @@ padding: .5em .5em;
 	  <div class="modal-header">
 		<button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
     <button onclick="BlocklyDuino.saveXmlFile();">Texte -> binaire</button>
-		  <a id="btn_saveXML" class="img" role='button'><image src="http://gdriv.es/ptcbimages/data-transfer-download-32.png" alt="alternative text" title=" save code to your computer">
+		  <a id="btn_saveXML" class="img" role='button'><image src="/images/data-transfer-download-32.png" alt="alternative text" title=" save code to your computer">
               </a>
-	 <a id="btn_fakeload" class="img" role='button'><image src="http://gdriv.es/ptcbimages/data-transfer-upload-32.png" alt="alternative text" title="upload saved codes from your computer">
+	 <a id="btn_fakeload" class="img" role='button'><image src="/images/data-transfer-upload-32.png" alt="alternative text" title="upload saved codes from your computer">
       </a>
 	  </div>
 	  <div class="modal-body text-center">
-     <a id="btn_fakeload" class="img" role='button'><image src="http://gdriv.es/ptcbimages/data-transfer-upload-32.png" alt="alternative text" title="upload saved codes from your computer">
+     <a id="btn_fakeload" class="img" role='button'><image src="/images/data-transfer-upload-32.png" alt="alternative text" title="upload saved codes from your computer">
       </a>
 <a id="btn_saveXML" class='btn btn-success btn-block text-left' href="#" role='button'>
         <span class="glyphicon glyphicon-cloud-download"></span>
@@ -580,8 +594,41 @@ padding: .5em .5em;
         </h4>
           <div class="modal-body text-center">
              <div class="dropdown">
-             <button type="button" class="bdropbtn" onclick="alert('Disabled in Lite Version');"><span class="glyphicon glyphicon-log-in"> </span> cStyle </button>
+             <button type="button" class="bdropbtn"><span class="glyphicon glyphicon-log-in"> </span> Instructions </button>
+              <div class="dropdown-content" > <h5>1. Drag and drop blocks to create your code </h5>
+<h5>2. Click the Arduino tab and click check code to make sure your code is correct</h5>
+<h5>3. Connect your hardware device to the computer with a USB cord or wirelessly</h5>
+<h5>4. Select your hardware device from the board drop down</h5>
+<h5>5. Change the serial port if necessary</h5>
+<h5>6. Click send to codebender to upload the code to your hardware device</h5>
+<p style="font-weight:bold;">Want to Code More?</p>
+If you are an advanced coder click the Arduino tab to enable more blocks.
+
+</div>
 	  </div>
+    <div class="dropdown">
+             <button type="button" class="bdropbtn"><span class="glyphicon glyphicon-log-in"> </span> Installing
+ </button>
+ <div class="dropdown-content" > <h5>cStyle lite is only compatible with Firefox and Chrome browsers. If you have a Mac computer you must use firefox. Install the codebender extension in your browser to program compatible hardware devices.</h5>
+<p style="font-weight:bold;">https://codebender.cc/static/plugin</p>
+  </div>
+           </div>
+           <div class="dropdown">
+             <button type="button" class="bdropbtn"><span class="glyphicon glyphicon-log-in"> </span> Using cStyle Offline
+ </button>
+ <div class="dropdown-content" > <h5>To use cStyle offline click the Arduino tab and save your code as an Arduino .ino file. You must have Arduino software installed on your computer to use the file.<p style="font-weight:bold;"> https://www.arduino.cc/en/Main/Software</p>
+
+<h5>You may need to install additional libraries to code some parts of your hardware device. </h5>
+
+  </div>
+           </div>
+           <div class="dropdown">
+             <button type="button" class="bdropbtn"><span class="glyphicon glyphicon-log-in"> </span> Troubleshooting
+ </button>
+ <div class="dropdown-content" > <h5>cStyle lite stores your codes on the browser. If you are having trouble deleting the blocks you created, try deleting your browser history and refreshing the page. </h5>
+
+  </div>
+           </div>
       </div>
      </div>
 	</div>

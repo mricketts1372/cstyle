@@ -91,7 +91,7 @@ Blockly.Blocks['jeulin_detection_luminosite_ldr1'] = {
 	this.setHelpUrl('http://www.techno-zone-51.fr/dokuwiki2/doku.php?id=documentation:ldr1');
     this.appendDummyInput("")
         .appendField(Blockly.Msg.TECHNOZONE51_TEXT187)
-        .appendField(new Blockly.FieldImage("http://gdriv.es/ptcbimages/solutions-48.png" , Blockly.Arduino.imageSize, Blockly.Arduino.imageSize));
+        .appendField(new Blockly.FieldImage("images/solutions-482.png" , Blockly.Arduino.imageSize, Blockly.Arduino.imageSize));
   this.appendDummyInput()
    .appendField(Blockly.Msg.TECHNOZONE51_TEXT2)
              .appendField(new Blockly.FieldTextInput("3"), "Pin")
@@ -141,7 +141,7 @@ Blockly.Blocks['jeulin_feux_voie1_led1yellow'] = {
 //feux_voie1_led1green OK
 Blockly.Blocks['jeulin_feux_voie1_led1green'] = {
   init: function() {
-    this.setColour("#ff0080");
+    this.setColour("#ff0080");-
 	this.setHelpUrl('http://www.techno-zone-51.fr/dokuwiki2/doku.php?id=documentation:led1');
     this.appendDummyInput("")
         .appendField(new Blockly.FieldDropdown([[Blockly.Msg.TECHNOZONE51_TEXT33, "HIGH"], [Blockly.Msg.TECHNOZONE51_TEXT34, "LOW"]]), "STAT")

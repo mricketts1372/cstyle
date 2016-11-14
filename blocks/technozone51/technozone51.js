@@ -10,7 +10,7 @@ Blockly.Blocks['technozone_btn1white'] = {
     this.setHelpUrl('http://www.techno-zone-51.fr/dokuwiki2/doku.php?id=documentation:btn1');
     this.appendDummyInput()
         .appendField(Blockly.Msg.TECHNOZONE51_TEXT5)
-        .appendField(new Blockly.FieldImage("http://gdriv.es/ptcbimages/switch-48.png", Blockly.Arduino.imageSize, Blockly.Arduino.imageSize));
+        .appendField(new Blockly.FieldImage("images/switch-48.png", Blockly.Arduino.imageSize, Blockly.Arduino.imageSize));
     this.appendDummyInput("")
            .appendField(Blockly.Msg.TECHNOZONE51_TEXT2)
              .appendField(new Blockly.FieldTextInput("1"), 'PIN')
@@ -226,10 +226,10 @@ Blockly.Blocks['technozone_ctn1'] = {
 	this.setHelpUrl('http://www.techno-zone-51.fr/dokuwiki2/doku.php?id=documentation:ctn1');
     this.appendDummyInput("")
         .appendField(Blockly.Msg.TECHNOZONE51_TEXT24)
-        .appendField(new Blockly.FieldImage("http://gdriv.es/ptcbimages/temperature-2-48.png", Blockly.Arduino.imageSize, Blockly.Arduino.imageSize));
-      this.appendDummyInput()
+        .appendField(new Blockly.FieldImage("images/temperature-2-48.png", Blockly.Arduino.imageSize, Blockly.Arduino.imageSize));
+      this.appendDummyInput("")
       .appendField(Blockly.Msg.TECHNOZONE51_TEXT2)
-      .appendField(new Blockly.FieldTextInput("4"), "Pin")
+      .appendField(new Blockly.FieldTextInput("4"), 'PIN')
         .setAlign(Blockly.ALIGN_RIGHT);
          this.setInputsInline(true);
     this.setOutput(true, 'Number');
