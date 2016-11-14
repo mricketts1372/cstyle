@@ -255,6 +255,14 @@ html[dir="RTL"] #languageMenu {
 	right: auto;
 }
 
+#cb_cf_boards{
+   background-color: #a9a9a9;
+}
+
+#cb_cf_ports{
+   background-color: #a9a9a9;
+}
+
 #content_area,#content_blocks,#content_term,#content_xml {
 	height:95%;
 	width: 100%;
