@@ -9,7 +9,7 @@
 		<block type="logic_operation"></block>
 			<block type="procedures_ifreturn"></block>
 	</category>
-	<category name="CAT_LOOPS" colour="#ffffff">
+	<category name="CAT_LOOPS" colour="#ff0080">
 		<block type="jeulin_feux_voie1_led1green"></block>
 			<block type="inout_analog_write">
 				<value name="NUM">
