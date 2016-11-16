@@ -205,7 +205,7 @@
 		</block>
 		<block type="math_random_float"></block></category>
 	<sep></sep>
-		<category name="CAT_LED_RGB_CHAIN" colour="#C9D7E2">
+		<!--category name="CAT_LED_RGB_CHAIN" colour="#C9D7E2">
 		<block type="lp2i_ledRGB_WS2812B_init">
 			<value name="Pin_LedRGB">
 				<shadow type="math_number">
@@ -241,7 +241,7 @@
 			</value>
 		</block>
 	</category>
-	<category name="CAT_ARDUINO" colour="#CCCCFF">
+	<category name="CAT_ARDUINO" colour="#CCCCFF"-->
 
 			<category name="CAT_LOOPS" colour="#CCCCFF">
 		<block type="controls_repeat"></block>
