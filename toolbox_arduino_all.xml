@@ -240,8 +240,8 @@
 				</shadow>
 			</value>
 		</block>
-	</category>
-	<category name="CAT_ARDUINO" colour="#CCCCFF"-->
+	</category-->
+	<category name="CAT_ARDUINO" colour="#CCCCFF">
 
 			<category name="CAT_LOOPS" colour="#CCCCFF">
 		<block type="controls_repeat"></block>
