@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <toolbox>
-	<parametre id="defaultCategories">CAT_LOGIC,CAT_LOOPS,CAT_VARIABLES,CAT_FUNCTIONS,CAT_MATH,CAT_ARDUINO</parametre>
+	<parametre id="defaultCategories">CAT_LOGIC,CAT_LOOPS,CAT_VARIABLES,CAT_FUNCTIONS,CAT_MATH,CAT_ARDUINO,CAT_TECHNOZONE,CAT_ZUMO,CAT_GROVE, CAT_LED_RGB_CHAIN</parametre>
 	<category name="CAT_LOGIC" colour="#6666FF">
+			<block type="base_setup"></block>
+		<block type="base_setup_loop"></block>
 		<block type="controls_if"></block>
 		<block type="controls_switch"></block>
 		<block type="logic_compare"></block>
@@ -9,7 +11,24 @@
 			<block type="procedures_ifreturn"></block>
 	</category>
 	<category name="CAT_LOOPS" colour="#ff0080">
-		<block type="jeulin_feux_voie1_led1green"></block>
+		<block type="lp2i_ledRGB_WS2812B_init">
+			<value name="Pin_LedRGB">
+				<shadow type="math_number">
+					<field name="NUM">6</field>
+				</shadow>
+			</value>
+			<value name="ledRGB_brightness">
+				<shadow type="math_number">
+					<field name="NUM">100</field>
+				</shadow>
+			</value>
+			<value name="Number_of_Pixels">
+				<shadow type="math_number">
+					<field name="NUM">1</field>
+				</shadow>
+			</value>
+		</block>
+			<block type="inout_digital_read_validator"></block>
 			<block type="inout_analog_write">
 				<value name="NUM">
 					<shadow type="math_number">
@@ -17,8 +36,9 @@
 					</shadow>
 				</value>
 			</block>
+		<block type="base_const"></block>
+		<block type="base_end"></block>
 			<block type="inout_analog_read"></block>
-			<block type="inout_digital_read"></block>
 		<block type="procedures_defnoreturn"></block>
 		<block type="procedures_defreturn"></block>
 		<block type="base_delay">
@@ -37,12 +57,15 @@
 		</block>
 		<block type="controls_whileUntil"></block>
 		<block type="controls_flow_statements"></block>
+
 	</category>
 	<category name="CAT_MATH" colour="#FFC1E4">
 		<block type="math_number"></block>
+		<block type="logic_boolean"></block>
 			<block type="inout_onoff"></block>
 				<block type="inout_onoff_custom"></block>
 	</category>
+
 	<!--category name="CAT_LIST" colour="#58B5DC"> <block type="lists_create_empty"></block>
 		<block type="lists_create_with"></block> <block type="lists_repeat"> <value
 		name="NUM"> <block type="math_number"> <field name="NUM">5</field> </block>
@@ -114,23 +137,6 @@
 		<block type="technozone_ctn1"></block>
 					<block type="technozone_btn1white"></block>
 			<block type="jeulin_detection_luminosite_ldr1"></block>
-		<block type="lp2i_ledRGB_WS2812B_init">
-			<value name="Pin_LedRGB">
-				<shadow type="math_number">
-					<field name="NUM">6</field>
-				</shadow>
-			</value>
-			<value name="ledRGB_brightness">
-				<shadow type="math_number">
-					<field name="NUM">100</field>
-				</shadow>
-			</value>
-			<value name="Number_of_Pixels">
-				<shadow type="math_number">
-					<field name="NUM">1</field>
-				</shadow>
-			</value>
-		</block>
 		<block type="lp2i_ledRGB_WS2812B_setPixelColor_custom">
 			<value name="Pixel_number">
 				<shadow type="math_number">
@@ -205,7 +211,7 @@
 		</block>
 		<block type="math_random_float"></block></category>
 	<sep></sep>
-		<!--category name="CAT_LED_RGB_CHAIN" colour="#C9D7E2">
+		<category name="CAT_LED_RGB_CHAIN" colour="#C9D7E2">
 		<block type="lp2i_ledRGB_WS2812B_init">
 			<value name="Pin_LedRGB">
 				<shadow type="math_number">
@@ -240,19 +246,11 @@
 				</shadow>
 			</value>
 		</block>
-	</category-->
+	</category>
 	<category name="CAT_ARDUINO" colour="#CCCCFF">
 
 			<category name="CAT_LOOPS" colour="#CCCCFF">
 		<block type="controls_repeat"></block>
-		<block type="controls_repeat_ext">
-			<value name="TIMES">
-				<shadow type="math_number">
-					<field name="NUM">10</field>
-				</shadow>
-			</value>
-		</block>
-		<block type="controls_whileUntil"></block>
 		<block type="controls_for">
 			<field name="VAR">i</field>
 			<value name="FROM">
@@ -272,7 +270,6 @@
 			</value>
 		</block>
 		<block type="controls_forEach"></block>
-		<block type="controls_flow_statements"></block>
 	</category>
 	<category name="CAT_MATH" colour="#CCCCFF">
 		<block type="math_number"></block>
@@ -318,24 +315,17 @@
 		</block>
 		<block type="math_random_float"></block>
 	</category>
-		<block type="base_setup"></block>
-		<block type="base_setup_loop"></block>
-		<block type="base_define_const"></block>
-		<block type="base_const"></block>
-		<block type="biblio_include"></block>
-		<block type="base_code"></block>
-		<block type="base_end"></block>
+
+<block type="base_code"></block>
+
 		<category name="CAT_LOGIC" colour="#6666FF">
 		<block type="controls_if"></block>
 		<block type="controls_switch"></block>
 		<block type="logic_negate"></block>
-		<block type="logic_boolean"></block>
 		<block type="logic_null"></block>
 	</category>
 		<category name="CAT_ARDUINO_IN" colour="#CCCCFF">
 			<block type="inout_analog_read_validator"></block>
-			<block type="inout_digital_read_validator"></block>
-			<block type="inout_analog_read"></block>
 			<block type="inout_digital_read"></block>
 			<block type="inout_onoff"></block>
 			<block type="inout_angle"></block>
@@ -382,13 +372,6 @@
 			<block type="millis"></block>
 			<block type="inout_pulsein"></block>
 			<block type="inout_pulsein_timeout"></block>
-			<block type="base_delay">
-				<value name="DELAY_TIME">
-					<shadow type="math_number">
-						<field name="NUM">1000</field>
-					</shadow>
-				</value>
-			</block>
 		</category>
 		<category name="CAT_VARIABLES" colour="#CCCCFF">
 		<block type="variables_set"></block>
@@ -403,7 +386,7 @@
 		</category>
 		<category name="CAT_ARDUINO_OUT" colour="#00979D">
 			<block type="inout_buildin_led"></block>
-			<block type="inout_digital_write_validator"></block>
+
 			<block type="inout_PWM_write_validator">
 				<value name="NUM">
 					<shadow type="math_number">
@@ -430,13 +413,7 @@
 					</shadow>
 				</value>
 			</block>
-			<block type="inout_analog_write">
-				<value name="NUM">
-					<shadow type="math_number">
-						<field name="NUM">0</field>
-					</shadow>
-				</value>
-			</block>
+
 			<block type="tone">
 				<value name="NUM">
 					<shadow type="math_number">

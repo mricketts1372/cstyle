@@ -27,7 +27,7 @@
 
 Blockly.Blocks.base_setup = {
   init: function () {
-        this.setColour("#00979D");
+        this.setColour("#6666FF");
 		this.setHelpUrl(Blockly.Msg.ARDUINO_BASE_SETUP_HELPURL);
         this.appendDummyInput("")
             .appendField(Blockly.Msg.ARDUINO_BASE_SETUP);
@@ -42,7 +42,7 @@ Blockly.Blocks.base_setup = {
 
 Blockly.Blocks.base_setup_loop = {
   init: function () {
-        this.setColour("#00979D");
+        this.setColour("#6666FF");
 		this.setHelpUrl(Blockly.Msg.ARDUINO_BASE_SETUP_LOOP_HELPURL);
         this.appendDummyInput("")
             .appendField(Blockly.Msg.ARDUINO_BASE_SETUP);
@@ -62,7 +62,7 @@ Blockly.Blocks.base_setup_loop = {
 
 Blockly.Blocks.base_const = {
   init: function () {
-        this.setColour("#00979D");
+        this.setColour("#ff0080");
 		this.setHelpUrl(Blockly.Msg.ARDUINO_BASE_DEFINE_HELPURL);
         this.appendDummyInput("")
             .appendField(Blockly.Msg.ARDUINO_BASE_DEFINE);
@@ -109,7 +109,7 @@ Blockly.Blocks.base_code = {
 Blockly.Blocks.base_end = {
   init: function() {
     this.setHelpUrl('');
-    this.setColour("#00979D");
+    this.setColour("#ff0080");
     this.appendDummyInput()
         .appendField(Blockly.Msg.ARDUINO_BASE_END);
     this.setPreviousStatement(true, null);
@@ -440,7 +440,7 @@ Blockly.Blocks['inout_onoff'] = {
     this.setColour("#00979D");
 	this.setHelpUrl(Blockly.Msg.ARDUINO_INOUT_ONOFF_HELPURL);
     this.appendDummyInput("")
-        .appendField(new Blockly.FieldDropdown(Blockly.Msg.FIELDDROPDOWN), 'BOOL');
+        .appendField(new Blockly.FieldDropdown(Blockly.Msg.FIELDDROPDOWN_ONOFF), 'BOOL');
     this.setOutput(true,'Boolean');
     this.setTooltip(Blockly.Msg.LOGIC_BOOLEAN_TOOLTIP);
   }

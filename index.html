@@ -275,9 +275,9 @@ padding: .5em .5em;
                <span id="span_doc"> </span>
            </a>
 
- <a id="btn_example" class='btn btn-info text-right' onclick="alert('Disabled in Lite Version');" alt="alternative text" title="code examples">
-               <span class="glyphicon glyphicon-duplicate">
-               </span>
+ <a id="btn_example" class='btn btn-info text-right' data-toggle="modal" data-target="#exampleModal"; alt="alternative text" title="code examples">
+   <span class="glyphicon glyphicon-duplicate"> </span>
+
            </a>
 
            <a id="btn_tuto" class='btn btn-info text-right' href="http://www.thepinkthink.com/#!contact/cnxn" target=_blank role='button'>
@@ -341,19 +341,20 @@ padding: .5em .5em;
 	                 </a>
 	            </li>
                 <div class="hide">
+               <li role="presentation" id="tab_xml">
+                   <a href="#content_xml" aria-controls="content_xml" role="tab" data-toggle="tab">
+                       <span  class="glyphicon glyphicon-file"></span>
+                       <span id="a_xml"></span>
+                   </a>
+               </li>
+
 	            <li role="presentation" id="tab_term">
 	                 <a href="#content_term" aria-controls="content_term" role="tab" data-toggle="tab">
 	                     <span  class="glyphicon glyphicon-log-out"></span>
 	                     <span id="a_term"> </span>
 	                 </a>
 	            </li>
-	            <li role="presentation" id="tab_xml">
-	                 <a href="#content_xml" aria-controls="content_xml" role="tab" data-toggle="tab">
-	                     <span  class="glyphicon glyphicon-file"></span>
-	                     <span id="a_xml"></span>
-	                 </a>
-	             </li>
-                 </div>
+             </div>
                  </ul>
                   </font>
             </div>
@@ -362,14 +363,12 @@ padding: .5em .5em;
             </a>
        <a id="btn_delete" class="img" role='button'><image src="images/trash-6-32.png" alt="alternative text" title=" Delete all blocks">
               </a>
-
             <div class="dropdown">
   <button onclick="myFunction()" class="dropbtn"><image src="images/save-32.png"></button>
   <div id="myDropdown" class="dropdown-content" >
     <a id="btn_saveXML" class="img" role='button'><image src="images/data-transfer-download-32.png" alt="alternative text" title=" save cstyle code to your computer">
               </a>
-<a id="btn_fakeload" class="img" role='button'><image src="images/data-transfer-upload-32.png" alt="alternative text" title="get saved cstyle codes from your computer">
-      </a>
+
              <a id="btn_info" class='img' onclick="alert('Disabled in Lite Version');"><image src="images/cloud-upload-32.png" alt="alternative text" title="save cstyle code to your account"></a>
 
               <a id="button" class='img' onclick="alert('Disabled in Lite Version');"><image src="images/cloud-download-32.png" alt="alternative text" title="download cstyle codes from your account"></a>
@@ -377,6 +376,10 @@ padding: .5em .5em;
 
   </div>
 </div>
+<a id="btn_fakeload" class="img" role='button'><image src="images/data-transfer-upload-32.png" alt="alternative text" title="get saved cstyle codes from your computer">
+</a>
+        <Input Type ="file" id="load" style="display: none;"/>
+
               </div>
 
 
@@ -625,7 +628,7 @@ If you are an advanced coder click the Arduino tab to enable more blocks.
            <div class="dropdown">
              <button type="button" class="bdropbtn"><span class="glyphicon glyphicon-log-in"> </span> Troubleshooting
  </button>
- <div class="dropdown-content" > <h5>cStyle lite stores your codes on the browser. If you are having trouble deleting the blocks you created, try deleting your browser history and refreshing the page. </h5>
+ <div class="dropdown-content" > <h5>1. The cStyle blocks are set up to be compatible with the bracelet but you can customize the blocks for your projects by changing the pin numbers and text. </h5> <h5>2. If you are using a UBS cord to connect your hardware project, plug it into your computer in order for it to appear on the serial port drop down menu. </h5> <h5>3. cStyle lite stores your codes on the browser. If you are having trouble deleting the blocks you created, try deleting your browser history and refreshing the page. </h5>
 
   </div>
            </div>

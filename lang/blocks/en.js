@@ -539,7 +539,7 @@ Blockly.Msg.ARDUINO_BASE_DELAY_DELAY_TIME = "pause (in ms)";
 Blockly.Msg.ARDUINO_BASE_DELAY_TOOLTIP = "specify the pause time in milliseconds";
 Blockly.Msg.ARDUINO_BASE_SETUP = "Setup";
 Blockly.Msg.ARDUINO_BASE_SETUP_HELPURL = "https://www.arduino.cc/en/Reference/Setup";
-Blockly.Msg.ARDUINO_BASE_LOOP = "Arduino loop forever:";
+Blockly.Msg.ARDUINO_BASE_LOOP = "repeat forever:";
 Blockly.Msg.ARDUINO_BASE_SETUP_LOOP_HELPURL = "https://www.arduino.cc/en/Reference/Loop";
 Blockly.Msg.ARDUINO_SINCE_PROGRAM_STARTED_HELPURL = "https://www.arduino.cc/en/Reference/Millis";
 Blockly.Msg.ARDUINO_SINCE_PROGRAM_STARTED = "time since program started";
@@ -555,7 +555,7 @@ Blockly.Msg.ARDUINO_BASE_CONST = "define";
 Blockly.Msg.ARDUINO_BASE_DEFINE_HELPURL = "https://www.arduino.cc/en/Reference/Define";
 Blockly.Msg.ARDUINO_BASE_DEFINE = "Define";
 Blockly.Msg.ARDUINO_BASE_DEFINE_TOOLTIP = "Define constants & librairies";
-Blockly.Msg.ARDUINO_BASE_END = 'wait forever (end of program)';
+Blockly.Msg.ARDUINO_BASE_END = 'stop (end of program)';
 Blockly.Msg.ARDUINO_CONSTRAIN = "constrain";
 Blockly.Msg.ARDUINO_CONSTRAIN_X = " number";
 Blockly.Msg.ARDUINO_CONSTRAIN_A = "from A = ";
@@ -566,11 +566,12 @@ Blockly.Msg.ARDUINO_INOUT_BUILDIN_LED_HELPURL = "http://arduino.cc/en/Reference/
 Blockly.Msg.ARDUINO_INOUT_BUILDIN_LED_INPUT = "put the LEDs on the card to logic";
 Blockly.Msg.ARDUINO_INOUT_BUILDIN_LED_TOOLTIP = "off or turn on the LED on the Arduino board";
 Blockly.Msg.ARDUINO_INOUT_DIGITAL_WRITE_HELPURL = "http://arduino.cc/en/Reference/DigitalWrite";
-Blockly.Msg.ARDUINO_INOUT_DIGITAL_WRITE_INPUT1 = "put the pin Digital";
-Blockly.Msg.ARDUINO_INOUT_DIGITAL_WRITE_INPUT2 = "to logic state";
+Blockly.Msg.ARDUINO_INOUT_DIGITAL_WRITE_INPUT1 = " turn pin";
+Blockly.Msg.ARDUINO_INOUT_DIGITAL_WRITE_INPUT2 = " ";
 Blockly.Msg.ARDUINO_INOUT_DIGITAL_WRITE_TOOLTIP = "write a 0 or 1 state numeric on a specific output";
 Blockly.Msg.ARDUINO_INOUT_DIGITAL_READ_HELPURL = "http://arduino.cc/en/Reference/DigitalRead";
-Blockly.Msg.ARDUINO_INOUT_DIGITAL_READ_INPUT = "Is";
+Blockly.Msg.ARDUINO_INOUT_DIGITAL_READ_INPUT1 = "pin";
+Blockly.Msg.ARDUINO_INOUT_DIGITAL_READ_INPUT2 = "is";
 Blockly.Msg.ARDUINO_INOUT_DIGITAL_READ_TOOLTIP = "reading the digital state 0 or 1 of the digital pin";
 Blockly.Msg.ARDUINO_INOUT_PWM_WRITE_HELPURL = "http://arduino.cc/en/Reference/AnalogWrite";
 Blockly.Msg.ARDUINO_INOUT_PWM_WRITE_INPUT1 = "write on pin PWM~";
@@ -589,7 +590,7 @@ Blockly.Msg.ARDUINO_NOTONE_HELPURL = "http://arduino.cc/en/Reference/AnalogWrite
 Blockly.Msg.ARDUINO_NOTONE_INPUT = "stop sound on the pin";
 Blockly.Msg.ARDUINO_NOTONE_TOOLTIP = "mutes the sound on the selected pin";
 Blockly.Msg.ARDUINO_INOUT_ANALOG_READ_HELPURL = "http://arduino.cc/en/Reference/AnalogRead";
-Blockly.Msg.ARDUINO_INOUT_ANALOG_READ_INPUT = "get the value of the";
+Blockly.Msg.ARDUINO_INOUT_ANALOG_READ_INPUT = "get the value of";
 Blockly.Msg.ARDUINO_INOUT_ANALOG_READ_TOOLTIP = "returns a value between 0 and 1023";
 Blockly.Msg.ARDUINO_INOUT_ONOFF_HELPURL = "http://arduino.cc/en/Reference/Constants";
 Blockly.Msg.ARDUINO_INOUT_STATE = "state";
@@ -1097,7 +1098,7 @@ Blockly.Msg.lp2i_u8g_4draw_print_N3 = "Number 3 (at end) ="
 Blockly.Msg.lp2i_u8g_4draw_print_Text_line4 = "line 4 =";
 Blockly.Msg.lp2i_u8g_4draw_print_N4 = "Number 4 (at end) ="
 
-Blockly.Msg.lp2i_ledRGB_WS2812B_init = "Lights";
+Blockly.Msg.lp2i_ledRGB_WS2812B_init = "Make Lights";
 Blockly.Msg.lp2i_ledRGB_WS2812B_init_Pin = "Pin =";
 Blockly.Msg.lp2i_ledRGB_WS2812B_init_Brightness ="Brightness =";
 Blockly.Msg.lp2i_ledRGB_WS2812B_init_Number_of_Pixels = "Number of lights =";

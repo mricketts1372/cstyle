@@ -75,14 +75,15 @@ Blockly.Blocks.inout_pulsein_timeout = {
 
 Blockly.Blocks.inout_digital_write_validator = {
   init: function() {
-    this.setColour("#00979D");
+    this.setColour("#ff0080");
     this.setHelpUrl(Blockly.Msg.ARDUINO_INOUT_DIGITAL_WRITE_HELPURL);
     this.appendDummyInput()
 		.appendField(Blockly.Msg.ARDUINO_INOUT_DIGITAL_WRITE_INPUT1)
 		.appendField(new Blockly.FieldTextInput('', Blockly.Arduino.pinDigitalValidator), 'PIN');
 	this.appendDummyInput()
       	.appendField(Blockly.Msg.ARDUINO_INOUT_DIGITAL_WRITE_INPUT2)
-		.appendField(new Blockly.FieldDropdown(Blockly.Msg.FIELDDROPDOWN), 'STAT');
+		.appendField(new Blockly.FieldDropdown(Blockly.Msg.FIELDDROPDOWN_ONOFF), 'STAT')
+    .appendField(Blockly.Msg.ARDUINO_INOUT_DIGITAL_WRITE_INPUT2);
     this.setInputsInline(true);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
@@ -92,7 +93,7 @@ Blockly.Blocks.inout_digital_write_validator = {
 
 Blockly.Blocks.inout_digital_write = {
   init: function() {
-    this.setColour("#ff0080");
+    this.setColour("#00979D");
     this.setHelpUrl(Blockly.Msg.ARDUINO_INOUT_DIGITAL_WRITE_HELPURL);
 	this.appendValueInput("PIN", 'Number')
         .setAlign(Blockly.ALIGN_RIGHT)
@@ -111,15 +112,15 @@ Blockly.Blocks.inout_digital_write = {
 
 Blockly.Blocks.inout_digital_read = {
   init: function() {
-    this.setColour("#ff0080");
+    this.setColour("#00979D");
     this.setHelpUrl(Blockly.Msg.ARDUINO_INOUT_DIGITAL_READ_HELPURL);
 	this.appendValueInput("PIN", 'Number')
       .setCheck('Number')
+      .appendField(Blockly.Msg.ARDUINO_INOUT_DIGITAL_READ_INPUT1)
         .setAlign(Blockly.ALIGN_RIGHT);
         this.appendValueInput("STAT", 'Boolean')
         .setAlign(Blockly.ALIGN_RIGHT)
-         .appendField(Blockly.Msg.ARDUINO_INOUT_DIGITAL_READ_INPUT);
-    this.setOutput(true, 'Boolean');
+         .appendField(Blockly.Msg.ARDUINO_INOUT_DIGITAL_READ_INPUT2);
       this.setInputsInline(true);
      this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
@@ -129,12 +130,16 @@ Blockly.Blocks.inout_digital_read = {
 
 Blockly.Blocks.inout_digital_read_validator = {
   init: function() {
-    this.setColour("#00979D");
+    this.setColour("#ff0080");
     this.setHelpUrl(Blockly.Msg.ARDUINO_INOUT_DIGITAL_READ_HELPURL);
     this.appendDummyInput()
-		.appendField(Blockly.Msg.ARDUINO_INOUT_DIGITAL_READ_INPUT)
+		.appendField(Blockly.Msg.ARDUINO_INOUT_DIGITAL_READ_INPUT1)
 		.appendField(new Blockly.FieldTextInput('',  Blockly.Arduino.pinDigitalValidator), 'PIN');
 	this.setInputsInline(true);
+  this.appendDummyInput()
+    .appendField(Blockly.Msg.ARDUINO_INOUT_DIGITAL_READ_INPUT2)
+   this.appendDummyInput("")
+          .appendField(new Blockly.FieldDropdown(Blockly.Msg.FIELDDROPDOWN_ONOFF), 'BOOL')
     this.setOutput(true,'Boolean');
     this.setTooltip(Blockly.Msg.ARDUINO_INOUT_DIGITAL_READ_TOOLTIP);
   }

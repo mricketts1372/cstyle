@@ -13,15 +13,15 @@ Blockly.Blocks['lp2i_ledRGB_WS2812B_init'] = {
     this.appendDummyInput()
       .setAlign(Blockly.ALIGN_RIGHT)
         .appendField(Blockly.Msg.lp2i_ledRGB_WS2812B_init_Brightness)
-        .appendField(new Blockly.FieldTextInput("50"),"BRIGHTNESS");
+        .appendField(new Blockly.FieldTextInput("100"),"BRIGHTNESS");
     this.appendDummyInput()
         .setAlign(Blockly.ALIGN_RIGHT)
 		.appendField(Blockly.Msg.lp2i_ledRGB_WS2812B_init_Number_of_Pixels)
-        .appendField(new Blockly.FieldTextInput("0"), "Number_of_Pixels");
+        .appendField(new Blockly.FieldTextInput("2"), "Number_of_Pixels");
     this.setInputsInline(false);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour("#8A55D7");
+    this.setColour("#ff0080");
     this.setTooltip('');
     this.setHelpUrl('http://blogpeda.ac-poitiers.fr/techno-jean-mace/2016/02/07/utilisation-de-modules-led-rgb-ws2812b-avec-blockly-arduino/');
   }
@@ -62,7 +62,7 @@ Blockly.Blocks['lp2i_ledRGB_WS2812B_setPixelColor_custom'] = {
  this.appendDummyInput()
         .setAlign(Blockly.ALIGN_RIGHT)
         .appendField(Blockly.Msg.lp2i_ledRGB_WS2812B_setPixelColor_Pixel_Number)
-        .appendField(new Blockly.FieldTextInput("1"), "Pixel_number");
+        .appendField(new Blockly.FieldTextInput("0"), "Pixel_number");
     this.setInputsInline(true);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
