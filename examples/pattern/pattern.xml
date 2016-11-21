@@ -1,0 +1,76 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="lp2i_ledRGB_WS2812B_init" x="-137" y="-238">
+    <field name="Pin_LedRGB">2</field>
+    <field name="BRIGHTNESS">100</field>
+    <field name="Number_of_Pixels">2</field>
+    <next>
+      <block type="lp2i_ledRGB_WS2812B_setPixelColor_custom">
+        <field name="RGB">#ffff33</field>
+        <field name="Pixel_number">0</field>
+        <next>
+          <block type="base_delay">
+            <value name="DELAY_TIME">
+              <shadow type="math_number">
+                <field name="NUM">1000</field>
+              </shadow>
+              <block type="math_number">
+                <field name="NUM">5000</field>
+              </block>
+            </value>
+            <next>
+              <block type="controls_repeat_ext">
+                <value name="TIMES">
+                  <shadow type="math_number">
+                    <field name="NUM">10</field>
+                  </shadow>
+                  <block type="math_number">
+                    <field name="NUM">10</field>
+                  </block>
+                </value>
+                <statement name="DO">
+                  <block type="lp2i_ledRGB_WS2812B_setPixelColor_custom">
+                    <field name="RGB">#ff0000</field>
+                    <field name="Pixel_number">0</field>
+                    <next>
+                      <block type="base_delay">
+                        <value name="DELAY_TIME">
+                          <shadow type="math_number">
+                            <field name="NUM">1000</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="lp2i_ledRGB_WS2812B_setPixelColor_custom">
+                            <field name="RGB">#ff6666</field>
+                            <field name="Pixel_number">0</field>
+                            <next>
+                              <block type="base_delay">
+                                <value name="DELAY_TIME">
+                                  <shadow type="math_number">
+                                    <field name="NUM">1000</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <next>
+                  <block type="lp2i_ledRGB_WS2812B_setPixelColor_custom">
+                    <field name="RGB">#00ff00</field>
+                    <field name="Pixel_number">0</field>
+                    <next>
+                      <block type="base_end"></block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

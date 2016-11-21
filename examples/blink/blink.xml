@@ -1,23 +1,32 @@
-<xml>
-  <block type="inout_buildin_led" x="18" y="17">
-    <title name="STAT">HIGH</title>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="lp2i_ledRGB_WS2812B_init" x="-112" y="-163">
+    <field name="Pin_LedRGB">2</field>
+    <field name="BRIGHTNESS">100</field>
+    <field name="Number_of_Pixels">2</field>
     <next>
-      <block type="base_delay" inline="true">
-        <value name="DELAY_TIME">
-          <block type="math_number">
-            <title name="NUM">1000</title>
-          </block>
-        </value>
+      <block type="lp2i_ledRGB_WS2812B_setPixelColor_custom">
+        <field name="RGB">#000099</field>
+        <field name="Pixel_number">0</field>
         <next>
-          <block type="inout_buildin_led">
-            <title name="STAT">LOW</title>
+          <block type="base_delay">
+            <value name="DELAY_TIME">
+              <shadow type="math_number">
+                <field name="NUM">1000</field>
+              </shadow>
+            </value>
             <next>
-              <block type="base_delay" inline="true">
-                <value name="DELAY_TIME">
-                  <block type="math_number">
-                    <title name="NUM">1000</title>
+              <block type="lp2i_ledRGB_WS2812B_setPixelColor_custom">
+                <field name="RGB">#cc33cc</field>
+                <field name="Pixel_number">0</field>
+                <next>
+                  <block type="base_delay">
+                    <value name="DELAY_TIME">
+                      <shadow type="math_number">
+                        <field name="NUM">1000</field>
+                      </shadow>
+                    </value>
                   </block>
-                </value>
+                </next>
               </block>
             </next>
           </block>

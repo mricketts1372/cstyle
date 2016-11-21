@@ -1,0 +1,45 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="controls_if" x="-487" y="-87">
+    <value name="IF0">
+      <block type="technozone_btn1white">
+        <field name="PIN">1</field>
+      </block>
+    </value>
+    <statement name="DO0">
+      <block type="lp2i_ledRGB_WS2812B_init">
+        <field name="Pin_LedRGB">2</field>
+        <field name="BRIGHTNESS">100</field>
+        <field name="Number_of_Pixels">2</field>
+        <next>
+          <block type="lp2i_ledRGB_WS2812B_setPixelColor">
+            <field name="Pixel_number">0</field>
+            <value name="Red">
+              <shadow type="math_number">
+                <field name="NUM">255</field>
+              </shadow>
+              <block type="math_number">
+                <field name="NUM">102</field>
+              </block>
+            </value>
+            <value name="Green">
+              <shadow type="math_number">
+                <field name="NUM">255</field>
+              </shadow>
+              <block type="math_number">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+            <value name="Blue">
+              <shadow type="math_number">
+                <field name="NUM">255</field>
+              </shadow>
+              <block type="math_number">
+                <field name="NUM">153</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>

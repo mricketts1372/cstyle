@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <toolbox>
-	<parametre id="defaultCategories">CAT_LOGIC,CAT_LOOPS,CAT_VARIABLES,CAT_FUNCTIONS,CAT_MATH,CAT_ARDUINO,CAT_TECHNOZONE,CAT_ZUMO,CAT_GROVE, CAT_LED_RGB_CHAIN</parametre>
+	<parametre id="defaultCategories">CAT_LOGIC,CAT_LOOPS,CAT_VARIABLES,CAT_FUNCTIONS,CAT_MATH,CAT_ARDUINO,CAT_TECHNOZONE,CAT_ZUMO,CAT_GROVE,</parametre>
 	<category name="CAT_LOGIC" colour="#6666FF">
 			<block type="base_setup"></block>
 		<block type="base_setup_loop"></block>
@@ -28,6 +28,7 @@
 				</shadow>
 			</value>
 		</block>
+		<block type="jeulin_feux_voie1_led1green"></block>
 			<block type="inout_digital_read_validator"></block>
 			<block type="inout_analog_write">
 				<value name="NUM">
@@ -37,7 +38,6 @@
 				</value>
 			</block>
 		<block type="base_const"></block>
-		<block type="base_end"></block>
 			<block type="inout_analog_read"></block>
 		<block type="procedures_defnoreturn"></block>
 		<block type="procedures_defreturn"></block>
@@ -57,7 +57,7 @@
 		</block>
 		<block type="controls_whileUntil"></block>
 		<block type="controls_flow_statements"></block>
-
+<block type="base_end"></block>
 	</category>
 	<category name="CAT_MATH" colour="#FFC1E4">
 		<block type="math_number"></block>
@@ -211,7 +211,7 @@
 		</block>
 		<block type="math_random_float"></block></category>
 	<sep></sep>
-		<category name="CAT_LED_RGB_CHAIN" colour="#C9D7E2">
+		<!--category name="CAT_LED_RGB_CHAIN" colour="#C9D7E2">
 		<block type="lp2i_ledRGB_WS2812B_init">
 			<value name="Pin_LedRGB">
 				<shadow type="math_number">
@@ -246,7 +246,7 @@
 				</shadow>
 			</value>
 		</block>
-	</category>
+	</category-->
 	<category name="CAT_ARDUINO" colour="#CCCCFF">
 
 			<category name="CAT_LOOPS" colour="#CCCCFF">

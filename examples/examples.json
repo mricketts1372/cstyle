@@ -1,6 +1,6 @@
 [
     {
-      "source_url":"./examples/blink/blink.xml",
+      "source_url":"./examples/lights/lights.xml",
       "source_text":"Turn the Lights On: Code the lights pink",
       "image":"",
         "link_url": "",
@@ -8,26 +8,26 @@
         "visible": true
     },
     {
-      "source_url":"./examples/servo_potentio/servo_potentio.xml",
-      "source_text":"Flashing Lights: This is a blink code",
+      "source_url":"./examples/blink/blink.xml",
+      "source_text":"Flashing Lights: Make the lights blink dark blue & purple",
       "image":"",
       "link_url":"",
       "link_text":"",
         "visible": true
     },
     {
-      "source_url":"./examples/grenouille/grenouille.xml",
-      "source_text":"All of the Lights: The lights blink and also changes from teal to light blue to fuchsia",
+      "source_url":"./examples/pattern/pattern.xml",
+      "source_text":"All of the Lights: The lights are yellow then blink red and orange before changing to green",
       "image":"",
-      "link_url":"http://fablabo.net/wiki/FablabJunior_Automne_2015/Projet4",
+      "link_url":"",
       "link_text":"",
         "visible": true
     },
    {
-      "source_url":"./examples/suiveur_de_ligne/suiveur_de_ligne.xml",
+      "source_url":"./examples/lights_out/lights_out.xml",
       "source_text":"Lights Out: The lights only come on when the on/off button is pushed",
       "image":"",
-      "link_url":"http://fablabo.net/wiki/FablabJunior_Automne_2015/Projet2",
+      "link_url":"",
       "link_text":"",
         "visible": true
    }
