@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <toolbox>
-	<parametre id="defaultCategories">CAT_LOGIC,CAT_LOOPS,CAT_VARIABLES,CAT_FUNCTIONS,CAT_MATH,CAT_ARDUINO,CAT_TECHNOZONE,CAT_ZUMO,CAT_GROVE,CAT_CLOUD_SERVICE,CAT_ETHERNET</parametre>
+	<parametre id="defaultCategories">CAT_LOGIC,CAT_LOOPS,CAT_VARIABLES,CAT_FUNCTIONS,CAT_MATH,CAT_ARDUINO,CAT_TECHNOZONE,CAT_ZUMO,CAT_GROVE</parametre>
 
 	<category name="CAT_LOGIC" colour="#6666FF">
 			<block type="base_setup"></block>

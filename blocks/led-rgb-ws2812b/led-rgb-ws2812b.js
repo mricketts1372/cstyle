@@ -67,7 +67,6 @@ Blockly.Blocks['lp2i_ledRGB_WS2812B_setPixelColor_custom'] = {
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour("#8A55D7");
-    this.setTooltip('');
     this.setHelpUrl('http://blogpeda.ac-poitiers.fr/techno-jean-mace/2016/02/07/utilisation-de-modules-led-rgb-ws2812b-avec-blockly-arduino/');
   }
 };
