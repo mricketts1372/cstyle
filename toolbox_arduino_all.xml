@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <toolbox>
 	<parametre id="defaultCategories">CAT_LOGIC,CAT_LOOPS,CAT_VARIABLES,CAT_FUNCTIONS,CAT_MATH,CAT_ARDUINO,CAT_TECHNOZONE,CAT_ZUMO,CAT_GROVE,</parametre>
+
 	<category name="CAT_LOGIC" colour="#6666FF">
 			<block type="base_setup"></block>
 		<block type="base_setup_loop"></block>
@@ -1082,7 +1083,156 @@
 		<block type="multifunction_segment_number" colour="#0152AB"></block>
 		<block type="multifunction_PWM_write" colour="#0152AB"></block>
 	</category>
-
+ <category id="category_ethernet">';
+   <category id="category_ethernet_init">';
+     <block type="ethernet_begin_dhcp">';
+         <value name="MAC_ADDRESS">';
+          <block type="ethernet_mac_address"></block>';
+       </value>';
+    </block>';
+  <block type="ethernet_localip"></block>';
+  </category>';
+   <category id="category_ethernet_client">';
+    <block type="ethernet_connect">';
+  html += '        <value name="SERVER">';
+  html += '          <block type="text">';
+  html += '            <field name="TEXT">www.google.com</field>';
+  html += '          </block>';
+  html += '        </value>';
+  html += '      </block>';
+  html += '      <block type="ethernet_stop"></block>';
+  html += '      <block type="ethernet_connected"></block>';
+  html += '      <block type="ethernet_available"></block>';
+  html += '      <block type="ethernet_print">';
+  html += '        <value name="TEXT">';
+  html += '          <block type="text">';
+  html += '            <field name="TEXT"></field>';
+  html += '          </block>';
+  html += '        </value>';
+  html += '      </block>';
+  html += '      <block type="ethernet_println">';
+  html += '        <value name="TEXT">';
+  html += '          <block type="text">';
+  html += '            <field name="TEXT"></field>';
+  html += '          </block>';
+  html += '        </value>';
+  html += '      </block>';
+  html += '      <block type="ethernet_read"></block>';
+  html += '      <block type="ethernet_get_request"></block>';
+  html += '      <!--block type="ethernet_post_request"></block-->';
+  html += '    </category>';
+  html += '  </category>';
+  html += '  <sep></sep>';
+  html += '  <category id="category_cloud_service">';
+  html += '    <category id="category_ifttt">';
+  html += '      <block type="text">';
+  html += '        <field name="TEXT">maker.ifttt.com</field>';
+  html += '      </block>';
+  html += '      <block type="ifttt_get_url">';
+  html += '        <value name="EVENT">';
+  html += '          <block type="text">';
+  html += '            <field name="TEXT"></field>';
+  html += '          </block>';
+  html += '        </value>';
+  html += '        <value name="KEY">';
+  html += '          <block type="text">';
+  html += '            <field name="TEXT"></field>';
+  html += '          </block>';
+  html += '        </value>';
+  html += '      </block>';
+  html += '    </category>';
+  html += '    <category id="category_m2x">';
+  html += '      <block type="m2x_begin">';
+  html += '        <value name="ID">';
+  html += '          <block type="text">';
+  html += '            <field name="TEXT"></field>';
+  html += '          </block>';
+  html += '        </value>';
+  html += '        <value name="STREAM_NAME">';
+  html += '          <block type="text">';
+  html += '            <field name="TEXT"></field>';
+  html += '          </block>';
+  html += '        </value>';
+  html += '        <value name="KEY">';
+  html += '          <block type="text">';
+  html += '            <field name="TEXT"></field>';
+  html += '          </block>';
+  html += '        </value>';
+  html += '      </block>';
+  html += '      <block type="m2x_update_value">';
+  html += '        <value name="VALUE">';
+  html += '          <block type="math_number">';
+  html += '            <field name="NUM">1</field>';
+  html += '          </block>';
+  html += '        </value>';
+  html += '      </block>';
+  html += '      <block type="m2x_list_value"></block>';
+  html += '      <block type="m2x_custom_list_value"></block>';
+  html += '      <block type="m2x_delete_values"></block>';
+  html += '      <block type="m2x_update_location">';
+  html += '        <value name="LOCATION_NAME">';
+  html += '          <block type="text">';
+  html += '            <field name="TEXT"></field>';
+  html += '          </block>';
+  html += '        </value>';
+  html += '      </block>';
+  html += '    </category>';
+  html += '    <category id="category_blynk">';
+  html += '      <block type="blynk_ethernet_begin">';
+  html += '        <value name="AUTH">';
+  html += '          <block type="text">';
+  html += '            <field name="TEXT"></field>';
+  html += '          </block>';
+  html += '        </value>';
+  html += '        <value name="MAC_ADDRESS">';
+  html += '          <block type="ethernet_mac_address"></block>';
+  html += '        </value>';
+  html += '      </block>';
+  html += '      <block type="blynk_connect"></block>';
+  html += '      <block type="blynk_write"></block>';
+  html += '      <block type="blynk_param"></block>';
+  html += '      <block type="blynk_merge_param"></block>';
+  html += '      <block type="blynk_virtual_write">';
+  html += '        <value name="VALUE">';
+  html += '          <block type="math_number">';
+  html += '            <field name="NUM">1</field>';
+  html += '          </block>';
+  html += '        </value>';
+  html += '      </block>';
+  html += '      <block type="blynk_email">';
+  html += '        <value name="ADDRESS">';
+  html += '          <block type="text">';
+  html += '            <field name="TEXT"></field>';
+  html += '          </block>';
+  html += '        </value>';
+  html += '        <value name="TITLE">';
+  html += '          <block type="text">';
+  html += '            <field name="TEXT"></field>';
+  html += '          </block>';
+  html += '        </value>';
+  html += '        <value name="BODY">';
+  html += '          <block type="text">';
+  html += '            <field name="TEXT"></field>';
+  html += '          </block>';
+  html += '        </value>';
+  html += '      </block>';
+  html += '      <block type="blynk_notify">';
+  html += '        <value name="TEXT">';
+  html += '          <block type="text">';
+  html += '            <field name="TEXT"></field>';
+  html += '          </block>';
+  html += '        </value>';
+  html += '      </block>';
+  html += '      <block type="blynk_tweet">';
+  html += '        <value name="TEXT">';
+  html += '          <block type="text">';
+  html += '            <field name="TEXT"></field>';
+  html += '          </block>';
+  html += '        </value>';
+  html += '      </block>';
+  html += '    </category>';
+  html += '  </category>';
+  html += '  <sep></sep>';
 	<category name="CAT_TECHNOZONE" colour="#646464">
 		<category name="CAT_TECHNOZONE_IN" colour="#646464">
 			<block type="technozone_btn1white"></block>
