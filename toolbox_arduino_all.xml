@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <toolbox>
-	<parametre id="defaultCategories">CAT_LOGIC,CAT_LOOPS,CAT_VARIABLES,CAT_FUNCTIONS,CAT_MATH,CAT_ARDUINO,CAT_TECHNOZONE,CAT_ZUMO,CAT_GROVE,</parametre>
+	<parametre id="defaultCategories">CAT_LOGIC,CAT_LOOPS,CAT_VARIABLES,CAT_FUNCTIONS,CAT_MATH,CAT_ARDUINO,CAT_TECHNOZONE,CAT_ZUMO,CAT_GROVE,CAT_CLOUD_SERVICE,CAT_ETHERNET</parametre>
 
 	<category name="CAT_LOGIC" colour="#6666FF">
 			<block type="base_setup"></block>
@@ -1083,7 +1083,7 @@
 		<block type="multifunction_segment_number" colour="#0152AB"></block>
 		<block type="multifunction_PWM_write" colour="#0152AB"></block>
 	</category>
- <category id="category_ethernet">';
+ <category id="CAT_ETHERNET" colour="#0152AB">';
    <category id="category_ethernet_init">';
      <block type="ethernet_begin_dhcp">';
          <value name="MAC_ADDRESS">';
@@ -1123,7 +1123,7 @@
   html += '    </category>';
   html += '  </category>';
   html += '  <sep></sep>';
-  html += '  <category id="category_cloud_service">';
+  html += '  <category id="CAT_CLOUD_SERVICE">';
   html += '    <category id="category_ifttt">';
   html += '      <block type="text">';
   html += '        <field name="TEXT">maker.ifttt.com</field>';
